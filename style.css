@@ -1,29 +1,55 @@
 body {
-    background: #fefefe;
+  background: #545643;
 }
 
 section {
-    background: lightgray;
+  background: #f1dede;
 }
 
-h1{
-    color: blue;
-}
-p{
-    color: #043942;
-}
-h2{
-    color: #1460AA;
+.main-header {
+  color: #c89f9c;
 }
 
-.hotpink-header {
-    color: hotpink;
+.about-me{
+  
 }
 
-.violet-header {
-    color: rgb(187, 19, 187);
+.about-me__description {
+  color: black;
 }
 
-nav a {
-    color: rgb(13, 163, 13);
+.about-me__picture {
+
+}
+
+.about-me__title {
+  color: #80727b;
+}
+
+.navigation {
+
+}
+
+.navigation__link {
+  color: #bbacc1;
+}
+
+.navigation__link--top {
+  color: #909580;
+}
+
+.week-note{
+
+}
+
+.week-note__description{
+  color: black;
+}
+
+.week-note__heading {
+  color: #909580;
+}
+
+.week-note__title {
+ color: #80727b;
 }

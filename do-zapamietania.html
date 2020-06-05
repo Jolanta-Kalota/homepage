@@ -1,145 +1,169 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <header id="top">
-        <nav>
-            <a href="index.html">Strona główna</a>
-            <a href="do-zapamietania.html">Do zapamiętania</a>
-        </nav>
+      <nav class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="do-zapamietania.html">Do zapamiętania</a>
+      </nav>
     </header>
 
-
     <main>
-        <header>
-            <h1>Do zapamiętania</h1>
-            <img src="lovelibrary.jpg" alt="biblioteka" />
-        </header>
+      <header>
+        <h1>Do zapamiętania</h1>
+        <img src="lovelibrary.jpg" alt="biblioteka" />
+      </header>
 
-        <section>
-            <h2>Skróty klawiszowe</h2>
-            <p>By rozpocząć szkielet strony (pierwszy kod) w Visual Studio Code wciskamy „!” i „Tab” <br>
-                Dzięki wciśnięciu klawiszy „Ctrl” i „S”, w programie Visual Studio Code zapisujemy zmiany na stronie
-                klawiszami „Ctrl” i „F” włączamy wyszukiwanie danego elementu <br>
-                „Ctrl” i „Z” cofamy ostatnie zmiany <br>
-                „Ctrl” i „Y” przywracamy ostatnie zmiany <br>
-                Klawisze „Ctrl” i „X” wycinamy element <br>
-                „Ctrl” i „V” wklejamy elwment <br>
-                „Alt” i „Z” zawijamy tekst w Visual Studio Code <br>
-                Przycisk „Tab” to „ręczne” robienie wcięć lub, by ładnie sformatować wciskamy „Ctrl”, „Shift” i „P”.
-                Potem w wyskakującą linijkę wpisać „format” i wybrać z opcji „format document” <br>
-                „Ctrl” i „A” zaznaczamy cały tekst <br>
-                „Ctrl” i „C” kopiujemy zaznaczony tekst <br>
-                „Ctrl” i „R” lub „F5” odświeżamy stronę w przeglądarce <br>
-                „Ctrl” i „Spacja” podpowiedź/ możliwe do użycia
-            </p>
-        </section>
+      <section>
+        <h2>Skróty klawiszowe</h2>
+        <p>
+          By rozpocząć szkielet strony (pierwszy kod) w Visual Studio Code
+          wciskamy „!” i „Tab” <br />
+          Dzięki wciśnięciu klawiszy „Ctrl” i „S”, w programie Visual Studio
+          Code zapisujemy zmiany na stronie klawiszami „Ctrl” i „F” włączamy
+          wyszukiwanie danego elementu <br />
+          „Ctrl” i „Z” cofamy ostatnie zmiany <br />
+          „Ctrl” i „Y” przywracamy ostatnie zmiany <br />
+          Klawisze „Ctrl” i „X” wycinamy element <br />
+          „Ctrl” i „V” wklejamy elwment <br />
+          „Alt” i „Z” zawijamy tekst w Visual Studio Code <br />
+          Przycisk „Tab” to „ręczne” robienie wcięć lub, by ładnie sformatować
+          wciskamy „Ctrl”, „Shift” i „P”. Potem w wyskakującą linijkę wpisać
+          „format” i wybrać z opcji „format document” <br />
+          „Ctrl” i „A” zaznaczamy cały tekst <br />
+          „Ctrl” i „C” kopiujemy zaznaczony tekst <br />
+          „Ctrl” i „R” lub „F5” odświeżamy stronę w przeglądarce <br />
+          „Ctrl” i „Spacja” podpowiedź/ możliwe do użycia
+        </p>
+      </section>
 
-        <section>
-            <h2>To się może przydać</h2>
-            <p>• Do sprawdzenia czy wszystko jest dobrze w kodzie na poziomie html <a
-                    href="https://validator.w3.org/nu/#textarea">Validator</a> <br>
-                • Specyfikacja html: <a href="https://www.w3.org/TR/html52/">Specyfikacja html</a> <br>
-                • Specyfikacja css: <a href="https://www.w3.org/TR/CSS/">Specyfikacja css</a> <br>
-                • Do robienia „kanbana” (planowania pracy): <a href="https://trello.com">Trello</a> <br>
-                • W razie problemów z wybraniem kolorów: <a href="https://coolors.co">Coolors</a> </p>
-        </section>
+      <section>
+        <h2>To się może przydać</h2>
+        <p>
+          • Do sprawdzenia czy wszystko jest dobrze w kodzie na poziomie html
+          <a href="https://validator.w3.org/nu/#textarea">Validator</a> <br />
+          • Specyfikacja html:
+          <a href="https://www.w3.org/TR/html52/">Specyfikacja html</a> <br />
+          • Specyfikacja css:
+          <a href="https://www.w3.org/TR/CSS/">Specyfikacja css</a> <br />
+          • Do robienia „kanbana” (planowania pracy):
+          <a href="https://trello.com">Trello</a> <br />
+          • W razie problemów z wybraniem kolorów:
+          <a href="https://coolors.co">Coolors</a>
+        </p>
+      </section>
 
-        <section>
-            <h2>Znaczniki</h2>
-            <p><strong>Jedne z części składowych kodu HTML. Ich budowa wygląda następująco: </strong><br>
-                (znacznik atrybut=”wartość”)treść(/znacznik) . <br>
-                !DOCTYPE html - typ dokumentu <br>
-                html lang="pl" - język strony tutaj polski <br>
-                main - główna część dokumentu <br>
-                section - sekcje dokumentu <br>
-                article - samodzielne treści (artykuły) <br>
-                header - nagłówek dokumentu/sekcji/artykułu <br>
-                footer - stopka dokumentu/sekcji <br>
-                Od (h1) do (h6) tekstowe nagłówki tytułowe- dokumentu/sekcji (tu chodzi o wielkość, ważność) <br>
-                (p) paragraf/akapit <br>
-                (link href=”nazwa.pliku” rel=”stylesheet” type=”text/css”) link do innego pliku <br>
-                (br) nowa linia (jest pojedynczym znacznikiem) <br>
-                (b) pogrubienie tekstu (efekt tylko wizualny) <br>
-                (strong) pogrubienie tekstu (podkreśla istotność i powagę frazy) <br>
-                (i) kursywa (pochylenie tekstu; efekt tylko wizualny) <br>
-                (em) kursywa (podkreśla inne znaczenie np. ironię) <br>
-                (a href=””target=””)opis łącza(/a) linki/łącza wewnątrz dokumentu <br>
-                (element id=”mój identyfikator”) atrybut id (identyfikuje element; nawigacja w obrębie dokumentu) <br>
-                np. (a
-                href=”#notatki”)Przejdź do notatek(/a) lub (a href”#top”)Wróć na górę strony(/a) <br>
-                (nav) nawigacja <br>
-                (img src=”” alt=””) img- obrazek o podanym adresie <br>
-                (znacznik style=”color:yellow;”)treść(/znacznik) styl przy znaczniku z wykorzystaniem atrybutu style
-                nazywamy stylem inline<br>
-                (znacznik class=”name”)treść(/znacznik) klasa; jak tworzymy nazwę (name) wykorzystujemy kebab-case;
-                tutaj używamy jeszcze .name{<br>
-                właściwość: wartość;<br>
-                }<br>
-                (znacznik id=”name”)treść(/znacznik) tutaj używamy #name{<br>
-                właściwość: wartość;<br> }<br>
-                !important „zabija” wszystkie inne reguły; dopisuje się go pomiędzy „wartość”, a „ ; ” gdy piszemy style
-                klasy. Zazwyczaj się tego nie używa, bo mąci w kodzie.<br>
-                Gdy chcemy stworzyć skrypt na stronie (np. przywitanie), za pomocą JavaScript używamy: (script), <br>
-                alert('tekst');<br>
-                (/script)<br>
-                a potem możemy to przerzucić do pliku z JavaScript’em za pomocą: (script src="main.js")(/script)<br>
-                console.log(‘tekst’); tworzenie skryptu (np. przywitania) w bardziej sekretny sposób, otóż w konsoli<br>
-                const name = 'Jola'; zmienne skryptu. Tak podajemy imię, a tak wiek const age = 21; zamiast name można
-                wpisać np. firstName. Trzeba pamiętać, że do tego używamy camelCase’a<br>
-                console.log(name); by wrzucic (w tym wypadku) name do konsoli na stronie.<br>
-                console.log(`Hejka nazywam się ${name} i mam ${age} lat.`); w ten sposób też można się przedstawić w
-                konsoli
+      <section>
+        <h2>Znaczniki</h2>
+        <p>
+          <strong
+            >Jedne z części składowych kodu HTML. Ich budowa wygląda
+            następująco: </strong
+          ><br />
+          (znacznik atrybut=”wartość”)treść(/znacznik) . <br />
+          !DOCTYPE html - typ dokumentu <br />
+          html lang="pl" - język strony tutaj polski <br />
+          main - główna część dokumentu <br />
+          section - sekcje dokumentu <br />
+          article - samodzielne treści (artykuły) <br />
+          header - nagłówek dokumentu/sekcji/artykułu <br />
+          footer - stopka dokumentu/sekcji <br />
+          Od (h1) do (h6) tekstowe nagłówki tytułowe- dokumentu/sekcji (tu
+          chodzi o wielkość, ważność) <br />
+          (p) paragraf/akapit <br />
+          (link href=”nazwa.pliku” rel=”stylesheet” type=”text/css”) link do
+          innego pliku <br />
+          (br) nowa linia (jest pojedynczym znacznikiem) <br />
+          (b) pogrubienie tekstu (efekt tylko wizualny) <br />
+          (strong) pogrubienie tekstu (podkreśla istotność i powagę frazy)
+          <br />
+          (i) kursywa (pochylenie tekstu; efekt tylko wizualny) <br />
+          (em) kursywa (podkreśla inne znaczenie np. ironię) <br />
+          (a href=””target=””)opis łącza(/a) linki/łącza wewnątrz dokumentu
+          <br />
+          (element id=”mój identyfikator”) atrybut id (identyfikuje element;
+          nawigacja w obrębie dokumentu) <br />
+          np. (a href=”#notatki”)Przejdź do notatek(/a) lub (a href”#top”)Wróć
+          na górę strony(/a) <br />
+          (nav) nawigacja <br />
+          (img src=”” alt=””) img- obrazek o podanym adresie <br />
+          (znacznik style=”color:yellow;”)treść(/znacznik) styl przy znaczniku z
+          wykorzystaniem atrybutu style nazywamy stylem inline<br />
+          (znacznik class=”name”)treść(/znacznik) klasa; jak tworzymy nazwę
+          (name) wykorzystujemy kebab-case; tutaj używamy jeszcze .name{<br />
+          właściwość: wartość;<br />
+          }<br />
+          (znacznik id=”name”)treść(/znacznik) tutaj używamy #name{<br />
+          właściwość: wartość;<br />
+          }<br />
+          !important „zabija” wszystkie inne reguły; dopisuje się go pomiędzy
+          „wartość”, a „ ; ” gdy piszemy style klasy. Zazwyczaj się tego nie
+          używa, bo mąci w kodzie.<br />
+          Gdy chcemy stworzyć skrypt na stronie (np. przywitanie), za pomocą
+          JavaScript używamy: (script), <br />
+          alert('tekst');<br />
+          (/script)<br />
+          a potem możemy to przerzucić do pliku z JavaScript’em za pomocą:
+          (script src="main.js")(/script)<br />
+          console.log(‘tekst’); tworzenie skryptu (np. przywitania) w bardziej
+          sekretny sposób, otóż w konsoli<br />
+          const name = 'Jola'; zmienne skryptu. Tak podajemy imię, a tak wiek
+          const age = 21; zamiast name można wpisać np. firstName. Trzeba
+          pamiętać, że do tego używamy camelCase’a<br />
+          console.log(name); by wrzucic (w tym wypadku) name do konsoli na
+          stronie.<br />
+          console.log(`Hejka nazywam się ${name} i mam ${age} lat.`); w ten
+          sposób też można się przedstawić w konsoli
+        <footer><i>Większość znaczników ma parę np. (head)(/head)</i></footer>
+      </section>
 
+      <section>
+        <h2>Właściwości/własności</h2>
+        <p>
+          <strong>Składnia CSS to reguły. A wyglądają tak: </strong><br />
+          selektor{ <br />
+          właściwość: wartość; <br />
+          } <br />
 
+          color: kolor <br />
+          background: tło
+        </p>
+      </section>
 
+      <section>
+        <h2>Literały w JS:</h2>
+        <p>„ ` „ - nie mylić z „ ‘ „. Jest to tzw. Backtick lub backquote</p>
+      </section>
 
-                <footer><i>Większość znaczników ma parę np. (head)(/head)</i></footer>
-            </p>
-        </section>
-
-        <section>
-            <h2>Właściwości/własności</h2>
-            <p><strong>Składnia CSS to reguły. A wyglądają tak: </strong><br>
-                selektor{ <br>
-                właściwość: wartość; <br>
-                } <br>
-
-                color: kolor <br>
-                background: tło</p>
-        </section>
-
-        <section>
-            <h2>Literały w JS:</h2>
-            <p>„ ` „ - nie mylić z „ ‘ „. Jest to tzw. Backtick lub backquote</p>
-        </section>
-
-        <section>
-            <h2>Polecenia w terminalu:</h2>
-            <p>dir – wypisanie zawartości katalogu <br>
-                cd nazwa-katalogu – przejście do katalogu o nazwie „nazwa-katalogu”. gdy chcemy przejść do (np.)
-                głównego katalogu dysku C piszemy cd C:\. Klawiszem „Tab” wybieramy pomiędzy katalogami zawartymi w
-                miejscu, w którym jesteśmy.<br>
-                cd – wyświetlanie aktualnej ścieżki<br>
-                code . – tak z poziomu terminala odpalamy Visual Studio Code (pamiętamy o spacji pomiędzy code oraz . )
-                w aktualnym katalogu<br>
-                cd .. – przenosi do katalogu wyżej<br>
-                mkdir nazwa-katalogu – stworzenie katalogu o nazwie „nazwa-katalogu”
-            </p>
-        </section>
+      <section>
+        <h2>Polecenia w terminalu:</h2>
+        <p>
+          dir – wypisanie zawartości katalogu <br />
+          cd nazwa-katalogu – przejście do katalogu o nazwie „nazwa-katalogu”.
+          gdy chcemy przejść do (np.) głównego katalogu dysku C piszemy cd C:\.
+          Klawiszem „Tab” wybieramy pomiędzy katalogami zawartymi w miejscu, w
+          którym jesteśmy.<br />
+          cd – wyświetlanie aktualnej ścieżki<br />
+          code . – tak z poziomu terminala odpalamy Visual Studio Code
+          (pamiętamy o spacji pomiędzy code oraz . ) w aktualnym katalogu<br />
+          cd .. – przenosi do katalogu wyżej<br />
+          mkdir nazwa-katalogu – stworzenie katalogu o nazwie „nazwa-katalogu”
+        </p>
+      </section>
     </main>
     <footer>
-        <i>Strona domowa Jolanty Kaloty, wszystkie treści są efektem nauki frontendu ze szkolenia „WTF: co ten
-            frontend”.</i>
-        <a href="#top">Wróć na górę strony</a>
+      <i
+        >Strona domowa Jolanty Kaloty, wszystkie treści są efektem nauki
+        frontendu ze szkolenia „WTF: co ten frontend”.</i
+      >
+      <a href="#top" class="navigation__link navigation__link--top">Wróć na górę strony</a>
     </footer>
-</body>
-
+  </body>
 </html>
