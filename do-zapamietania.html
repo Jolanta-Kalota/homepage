@@ -56,7 +56,9 @@
           • Do robienia „kanbana” (planowania pracy):
           <a href="https://trello.com">Trello</a> <br />
           • W razie problemów z wybraniem kolorów:
-          <a href="https://coolors.co">Coolors</a>
+          <a href="https://coolors.co">Coolors</a> <br />
+          •	By sprawdzić, czy dana funkcja działa w naszej przeglądarce: 
+          <a href="https://caniuse.com">Can I use</a> 
         </p>
       </section>
 
@@ -120,7 +122,9 @@
           console.log(name); by wrzucic (w tym wypadku) name do konsoli na
           stronie.<br />
           console.log(`Hejka nazywam się ${name} i mam ${age} lat.`); w ten
-          sposób też można się przedstawić w konsoli
+          sposób też można się przedstawić w konsoli. <br/>
+          (div)  nie ma znaczenia semantycznego, używamy gdy chcemy coś „opakować” (tylko kiedy nie istnieje odpowiedni semantyczny znacznik) (div class=”coś”)(/div)
+
         <footer><i>Większość znaczników ma parę np. (head)(/head)</i></footer>
       </section>
 
@@ -133,29 +137,63 @@
           } <br />
 
           color: kolor <br />
-          background: tło
-        </p>
+          background: tło <br/>
+          display: sposób wyświetlania tekstu np. inline (obok siebie), block (rozciąga się na całą długość strony), inline-block (dodaje dodatkowe własności: <br/>
+width: szerokość całego elementu, dodajemy w px (nie widać marginesu/końca, dodaje się scroll) <br/>
+height: wysokość całego elementu, dodajemy w px (nie widać marginesu/końca, dodaje się scroll) <br/>
+max-width: maksymalna szerokość (widać margines, dostosowuje się do wielkości strony, więc nie ma scrolla) <br/>
+max-height: maksymalna wysokość (widać tylko określoną przez nas ilość tekstu/elementu, reszta jest niewidoczna) <br/>
+min-width: minimalna szerokość <br/>
+min-height: minimalna wysokość <br/>
+overflow: pozwala na odcinanie wystającej części (hidden zasłania wystająca część, visible widać to co wystaje, auto dodaje scroll w elemencie, ale nie na stronie). <br/>
+padding: taki wewnętrzny margines. Zapisuje się go na kilka sposobów: (załóżmy, że padding-top: 3px, padding-right: 4px, padding-bottom: 5px, padding-left: 6px) można go zapisać oddzielnie pod sobą lub padding: 3px 4px 5px 6px; / padding: top right bottom left. Są też wartości „lustrzane” (załóżmy, że top 3px, right 4px, bottom 3px, left 4px) zapisujemy je tak: (pod sobą) padding-top: 3px; padding-right: 4px; padding-bottom: 3px; padding-left: 4px; lub padding: 3px 4px; . Kiedy wartości są wszystkie takie same możemy porozbijać je na pełny zapis lub po prostu zapisać tak: padding: 16px; (przy założeniu, że wielkość marginesów to 16px).<br/>
+border: czyli obramowanie. Można zapisać to tak: (pod sobą) border-width: 3px (szerokość); bordrer-style: solid (żeby był stały, nieprzerywany); border-color: #fe201a (kolor); lub można zapisać to krócej: border: 3px solid #fe201a; . Można rozmiary porozbijać na wszystkie kierunki (top, right, bottom, left), a kolory można zapisywać słownie (np. hotpink). Style mogą być jeszcze dashed (linia przerywana) i dotted (kropki). Wszystko można zastosować do poszczególnej ścianki obramowania.<br/>
+Border radius: pozwala nam na zaokrąglanie krawędzi. Zapisuje się go tak: border-radius: 20px (promień zaokrąglenia rogów/krawędzi). Jak wpiszemy wartość 50% zrobi nam się koło).<br/>
+margin: czyli margines pomiędzy kolejnymi elementami. Zapisuje się go tak samo jak padding. Dzięki display: inline-block; możemy ustawić nasze elementy wraz z obramowaniami i marginesami obok siebie liniowo. Własność marginesu „auto” pozwala na wyśrodkowanie elementu. Zapisuje się go „margin: 10px auto;” . By wycentrować element można jeszcze zrobić klasę wyglądającą w zapisie tak: margin: 0 auto; background: hotpink; width: 60px; . <br/>
+box-sizing: zmienia rozmiar całego „pudełka” od elementu do marginesów (z wykluczeniem marginesów gdy wpiszemy border-box po box-sizing). <br/>
+position: pozycjonowanie elementów na stronie. Domyślną własnością jest static (statyczna), lecz  jeszcze relative (zależna), która otwiera nam wiele możliwości jak własność absolute oraz top, bottom, left, right. Dzięki nim można przesuwać element od góry, od dołu, od lewej i od prawej o dowolną ilość jednostek. Jest jeszcze fixed, który różni się od absolut tym, że „przykleja” element w ten sposób, że „wędruje” on wraz z nami po stronie. Kolejny rodzaj to sticky (przy nim nie może być overflow), dzięki któremu nasz element „przykleja się dopiero po tekście przed nim, a potem „odkleja” gdy kończy się jego „pudełko”. <br/>
+z-index: używamy gdy chcemy zdefiniować warstwę.  <br/>
+float: służy do „opływania” naszych elementów. Jeżeli wpiszemy left, to element będzie opływany przez tekst z prawej strony, jeśli right, to tekst będzie po lewej stronie. Jeżeli box z tekstem będzie mniejszy niż float to będzie wystawał. By go wyczyścić można wpisać własność clear, dzięki czemu box się rozciągnie do najwyższego float’u (dopisujemy both po clear: jeżeli chcemy oczyścić z obu stron, jeżeli z prawej to right, jeśli z lewej to left). Inny sposób na rozciągniecie boxu do float to wpisanie overflow: hidden (gdy określimy wysokość będzie ucięty). </p>
       </section>
 
       <section>
-        <h2>Literały w JS:</h2>
-        <p>„ ` „ - nie mylić z „ ‘ „. Jest to tzw. Backtick lub backquote</p>
+        <h2>Ważne w JS:</h2>
+        <p>„ ` „ - nie mylić z „ ‘ „. Jest to tzw. Backtick lub backquote <br/>
+          const  - zmienne mające stałe połączenie z jedna wartością np. const name = Jola <br/>
+let - zmienne, których połączenie możemy przepinać, ale definiujemy tylko raz np. let isHappy = false; isHappy = true; isHappy = ‘tak’; . Nazwy piszemy camelCase. <br/>
+<h3>Typy proste w JS:</h3>
+String – tekst oznaczamy ‘ lub „ (zaleca się ‘ ) <br/>
+Number – liczba <br/>
+Bigint – duża liczba, większa niż 2^53 <br/>
+boolean – true lub false <br/>
+null – wartość celowo niezdefiniowana <br/>
+undefined – brak definicji <br/>
+*symbol – tworzy „unikalne opakowanie” <br/>
+typeof – by sprawdzić jakiego typu jest dana zmienna </p>
       </section>
 
       <section>
         <h2>Polecenia w terminalu:</h2>
-        <p>
-          dir – wypisanie zawartości katalogu <br />
+        <p> dir – wypisanie zawartości katalogu <br />
           cd nazwa-katalogu – przejście do katalogu o nazwie „nazwa-katalogu”.
           gdy chcemy przejść do (np.) głównego katalogu dysku C piszemy cd C:\.
           Klawiszem „Tab” wybieramy pomiędzy katalogami zawartymi w miejscu, w
-          którym jesteśmy.<br />
-          cd – wyświetlanie aktualnej ścieżki<br />
+          którym jesteśmy. <br />
+          cd – wyświetlanie aktualnej ścieżki <br />
           code . – tak z poziomu terminala odpalamy Visual Studio Code
-          (pamiętamy o spacji pomiędzy code oraz . ) w aktualnym katalogu<br />
-          cd .. – przenosi do katalogu wyżej<br />
-          mkdir nazwa-katalogu – stworzenie katalogu o nazwie „nazwa-katalogu”
-        </p>
+          (pamiętamy o spacji pomiędzy code oraz . ) w aktualnym katalogu <br />
+          cd .. – przenosi do katalogu wyżej <br />
+          mkdir nazwa-katalogu – stworzenie katalogu o nazwie „nazwa-katalogu” <br />
+          git config --global user.name “Jan Nowak”  -  konfiguracja konta w Git; nazwa użytkownika <br />
+git config --global user.email jannowak@example.com  - konfiguracja konta w Git; mail użytkownika <br />
+git init  - założenie repetytorium na Git <br />
+dir/a  - pokazywanie wszystkich plików, nawet tych ukrytych <br />
+git status  - sprawdzanie stanu zapisanych zmian w projekcie <br />
+git add .  – dodawanie plików (zmian) do Git <br />
+git commit -m ”opis zmian”  - zapis zmian z opisem <br />
+gitk  - pokazuje historie zmian <br />
+git push  - wypychanie kodu do GitHub <br />
+ipconfig  - pozwala na ujrzenie swojego ip </p>
       </section>
     </main>
     <footer>
