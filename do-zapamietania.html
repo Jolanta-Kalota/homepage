@@ -16,14 +16,14 @@
     </header>
 
     <main>
-      <header>
-        <h1>Do zapamiętania</h1>
-        <img src="lovelibrary.jpg" alt="biblioteka" />
+      <header class="main-header">
+        <h1>Do zapamiętania </h1>
+        <img src="lovelibrary.jpg" alt="biblioteka" class="remember-picture" />
       </header>
 
       <section>
-        <h2>Skróty klawiszowe</h2>
-        <p>
+        <h2 class="week-note__title">Skróty klawiszowe</h2>
+        <p class="remember__description">
           By rozpocząć szkielet strony (pierwszy kod) w Visual Studio Code
           wciskamy „!” i „Tab” <br />
           Dzięki wciśnięciu klawiszy „Ctrl” i „S”, w programie Visual Studio
@@ -45,8 +45,8 @@
       </section>
 
       <section>
-        <h2>To się może przydać</h2>
-        <p>
+        <h2 class="week-note__title">To się może przydać</h2>
+        <p class="remember__description">
           • Do sprawdzenia czy wszystko jest dobrze w kodzie na poziomie html
           <a href="https://validator.w3.org/nu/#textarea">Validator</a> <br />
           • Specyfikacja html:
@@ -63,12 +63,12 @@
       </section>
 
       <section>
-        <h2>Znaczniki</h2>
-        <p>
-          <strong
+        <h2 class="week-note__title">Znaczniki</h2>
+        <p class="remember__description">
+          <strong>
             >Jedne z części składowych kodu HTML. Ich budowa wygląda
-            następująco: </strong
-          ><br />
+            następująco: </strong>
+          <br />
           (znacznik atrybut=”wartość”)treść(/znacznik) . <br />
           !DOCTYPE html - typ dokumentu <br />
           html lang="pl" - język strony tutaj polski <br />
@@ -123,14 +123,14 @@
           stronie.<br />
           console.log(`Hejka nazywam się ${name} i mam ${age} lat.`); w ten
           sposób też można się przedstawić w konsoli. <br/>
-          (div)  nie ma znaczenia semantycznego, używamy gdy chcemy coś „opakować” (tylko kiedy nie istnieje odpowiedni semantyczny znacznik) (div class=”coś”)(/div)
+          (div)  nie ma znaczenia semantycznego, używamy gdy chcemy coś „opakować” (tylko kiedy nie istnieje odpowiedni semantyczny znacznik) (div class=”coś”)(/div) 
 
-        <footer><i>Większość znaczników ma parę np. (head)(/head)</i></footer>
+        <footer class="remember-footer"><i>Większość znaczników ma parę np. (head)(/head)</i></footer> </p>
       </section>
 
       <section>
-        <h2>Właściwości/własności</h2>
-        <p>
+        <h2 class="week-note__title">Właściwości/własności</h2>
+        <p class="remember__description">
           <strong>Składnia CSS to reguły. A wyglądają tak: </strong><br />
           selektor{ <br />
           właściwość: wartość; <br />
@@ -157,11 +157,13 @@ float: służy do „opływania” naszych elementów. Jeżeli wpiszemy left, to
       </section>
 
       <section>
-        <h2>Ważne w JS:</h2>
-        <p>„ ` „ - nie mylić z „ ‘ „. Jest to tzw. Backtick lub backquote <br/>
+        <h2 class="week-note__title">Ważne w JS:</h2>
+        <p class="remember__description">
+          „ ` „ - nie mylić z „ ‘ „. Jest to tzw. Backtick lub backquote <br/>
           const  - zmienne mające stałe połączenie z jedna wartością np. const name = Jola <br/>
 let - zmienne, których połączenie możemy przepinać, ale definiujemy tylko raz np. let isHappy = false; isHappy = true; isHappy = ‘tak’; . Nazwy piszemy camelCase. <br/>
-<h3>Typy proste w JS:</h3>
+<article class="remember__description">
+<h3 class="week-note__heading">Typy proste w JS:</h3>
 String – tekst oznaczamy ‘ lub „ (zaleca się ‘ ) <br/>
 Number – liczba <br/>
 Bigint – duża liczba, większa niż 2^53 <br/>
@@ -169,12 +171,12 @@ boolean – true lub false <br/>
 null – wartość celowo niezdefiniowana <br/>
 undefined – brak definicji <br/>
 *symbol – tworzy „unikalne opakowanie” <br/>
-typeof – by sprawdzić jakiego typu jest dana zmienna </p>
+typeof – by sprawdzić jakiego typu jest dana zmienna </article> </p>
       </section>
 
       <section>
-        <h2>Polecenia w terminalu:</h2>
-        <p> dir – wypisanie zawartości katalogu <br />
+        <h2 class="week-note__title">Polecenia w terminalu:</h2>
+        <p class="remember__description"> dir – wypisanie zawartości katalogu <br />
           cd nazwa-katalogu – przejście do katalogu o nazwie „nazwa-katalogu”.
           gdy chcemy przejść do (np.) głównego katalogu dysku C piszemy cd C:\.
           Klawiszem „Tab” wybieramy pomiędzy katalogami zawartymi w miejscu, w
@@ -196,11 +198,11 @@ git push  - wypychanie kodu do GitHub <br />
 ipconfig  - pozwala na ujrzenie swojego ip </p>
       </section>
     </main>
-    <footer>
-      <i
-        >Strona domowa Jolanty Kaloty, wszystkie treści są efektem nauki
-        frontendu ze szkolenia „WTF: co ten frontend”.</i
-      >
+    <footer class="main-footer">
+      <i>
+        Strona domowa Jolanty Kaloty, wszystkie treści są efektem nauki
+        frontendu ze szkolenia „WTF: co ten frontend”.</i>
+
       <a href="#top" class="navigation__link navigation__link--top">Wróć na górę strony</a>
     </footer>
   </body>
