@@ -123,7 +123,11 @@
           stronie.<br />
           console.log(`Hejka nazywam się ${name} i mam ${age} lat.`); w ten
           sposób też można się przedstawić w konsoli. <br/>
-          (div)  nie ma znaczenia semantycznego, używamy gdy chcemy coś „opakować” (tylko kiedy nie istnieje odpowiedni semantyczny znacznik) (div class=”coś”)(/div) 
+          (div)  nie ma znaczenia semantycznego, używamy gdy chcemy coś „opakować” (tylko kiedy nie istnieje odpowiedni semantyczny znacznik) (div class=”coś”)(/div)  <br/>
+          const heading = document.querySelector(‘.main-heading’)  - stałe połączenie z nagłówkiem
+console.log(heading) – wpisujemy, by się podpiąć do elementu (w tym wypadku nagłówka) w konsoli tzn. zobaczyć jak wygląda aktulnie <br/>
+heading.innerHTML = `treść`  - wpisujemy, by za pomocą JS przekształcić nagłówek w HTML to nie jest typ prosty)
+
 
         <footer class="remember-footer"><i>Większość znaczników ma parę np. (head)(/head)</i></footer> </p>
       </section>
@@ -195,7 +199,8 @@ git add .  – dodawanie plików (zmian) do Git <br />
 git commit -m ”opis zmian”  - zapis zmian z opisem <br />
 gitk  - pokazuje historie zmian <br />
 git push  - wypychanie kodu do GitHub <br />
-ipconfig  - pozwala na ujrzenie swojego ip </p>
+ipconfig  - pozwala na ujrzenie swojego ip <br/>
+git pull - pobieranie z git’a </p>
       </section>
     </main>
     <footer class="main-footer">
