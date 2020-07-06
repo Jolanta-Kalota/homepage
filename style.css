@@ -1,13 +1,15 @@
 body {
-  background: #545643;
+  background: rgb(84,86,67);
+background: linear-gradient(83deg, rgba(84,86,67,1) 38%, rgba(144,149,128,1) 70%, rgba(128,114,123,1) 100%);
 }
 
 section {
-  background: #f1dede;
+  background: #f1dedebd;
 }
 
 .main-header {
   color: #c89f9c;
+  background: #545643c2;
 }
 
 .about-me{
@@ -46,8 +48,10 @@ section {
 }
 
 .navigation {
-  display: block;
+  display: flex;
   padding-left: 10px;
+  justify-content: center;
+  background: #545643c2;
 }
 
 .navigation__link {
@@ -58,6 +62,7 @@ section {
 .navigation__link--top {
   color: #909580;
   padding-left: 10px;
+  background: #545643c2;
 }
 
 .week-note{
@@ -91,7 +96,17 @@ section {
 .main-footer {
   display: block;
   margin: 10px;
+  background: #545643c2;
 }
+
+.remember-background {
+  background-image: url('lovelibrary.jpg');
+  min-height: 100vh;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 
 .remember__description {
   color: black;
@@ -104,11 +119,4 @@ section {
 .remember-footer {
   display: block;
   margin: 20px;
-}
-
-.remember-picture {
-  display: block;
-  width: 900px;
-  height: 460px;
-  margin: 0 auto;
 }
